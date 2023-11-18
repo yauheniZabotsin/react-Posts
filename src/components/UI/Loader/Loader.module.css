@@ -1,0 +1,26 @@
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: medium dashed green;
+  animation: rotate 1s ease-in infinite;
+}
+
+.wrapper_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0) scale(0.6);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
